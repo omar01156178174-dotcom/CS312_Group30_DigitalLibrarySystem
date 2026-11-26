@@ -1,0 +1,15 @@
+## Visual Studio Files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+## Build Results
+[Bb]in/
+[Oo]bj/
+
+## Other Temp Files
+*.log
+*.tmp
+*.bak

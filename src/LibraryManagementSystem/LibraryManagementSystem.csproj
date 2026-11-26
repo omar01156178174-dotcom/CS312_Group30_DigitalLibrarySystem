@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>$(NoWarn);WFO1000;CS0168</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="GUI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="GUI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="GUI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="GUI\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="GUI\Dialogs\BookDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Dialogs\BookDialog.Designer.cs">
+      <DependentUpon>BookDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="GUI\Dialogs\BookDialog.resx">
+      <DependentUpon>BookDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="GUI\Dialogs\BorrowDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Dialogs\BorrowDialog.Designer.cs">
+      <DependentUpon>BorrowDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="GUI\Dialogs\BorrowDialog.resx">
+      <DependentUpon>BorrowDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="GUI\Dialogs\ExecutiveReportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Dialogs\ExecutiveReportDialog.Designer.cs">
+      <DependentUpon>ExecutiveReportDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="GUI\Dialogs\ExecutiveReportDialog.resx">
+      <DependentUpon>ExecutiveReportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="GUI\Dialogs\MemberDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Dialogs\MemberDialog.Designer.cs">
+      <DependentUpon>MemberDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="GUI\Dialogs\MemberDialog.resx">
+      <DependentUpon>MemberDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="GUI\Dialogs\ReturnDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Dialogs\ReturnDialog.Designer.cs">
+      <DependentUpon>ReturnDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="GUI\Dialogs\ReturnDialog.resx">
+      <DependentUpon>ReturnDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="GUI\Controls\StatCardControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="GUI\Controls\GdiChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
